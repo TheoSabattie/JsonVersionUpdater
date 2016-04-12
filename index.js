@@ -53,7 +53,8 @@ function updateFileVersionFromConfig(config){
             }
         }
 
-        var versions         = arrayVersionFromObjVersion(obj);
+        var oldVersion = obj;
+        var versions   = arrayVersionFromObjVersion(obj);
 
         if (!versions){
             return;
@@ -65,6 +66,8 @@ function updateFileVersionFromConfig(config){
         fs.writeJson(config.filePath, fileToUpdate ,function (err){
             if (err){
                 console.error(err);
+            } else {
+                console.log("Update version " + oldVersion + " to " + newVersion + " on " + config.filePath);
             }
         });
     });
