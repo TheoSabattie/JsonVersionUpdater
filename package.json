@@ -1,0 +1,28 @@
+{
+  "name": "Json Version Updater",
+  "version": "1.0.0",
+  "description": "Update version on a json config file",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^0.26.4"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheoSabattie/JsonVersionUpdater.git"
+  },
+  "keywords": [
+    "Config",
+    "Json",
+    "Update",
+    "Files",
+    "Folders"
+  ],
+  "author": "Théo Sabattié",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheoSabattie/JsonVersionUpdater/issues"
+  },
+  "homepage": "https://github.com/TheoSabattie/JsonVersionUpdater"
+}
